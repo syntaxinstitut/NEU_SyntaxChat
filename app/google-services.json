@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638362739868",
+    "project_id": "neustartersyntaxchat",
+    "storage_bucket": "neustartersyntaxchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638362739868:android:1fa71199135204ddb5b959",
+        "android_client_info": {
+          "package_name": "de.syntax_institut.syntaxchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU3rJD4RiwpA-Jcig5-hzqKEtWPaHM7_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
