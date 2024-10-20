@@ -36,7 +36,9 @@ class MainActivity : ComponentActivity() {
             val messages by chatManager.messages.collectAsState()
             SyntaxChatTheme {
                 Box {
+                    // Der Hintergrund
                     BackgroundView()
+
                     Column{
                         // Die Titel-Leiste
                         TopAppBarView()

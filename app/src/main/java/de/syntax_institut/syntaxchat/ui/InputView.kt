@@ -1,6 +1,7 @@
 package de.syntax_institut.syntaxchat.ui
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -32,7 +33,9 @@ fun InputView(sendMessage: (String) -> Unit){
         shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp)
     ) {
         Row(
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier
+                .padding(16.dp)
+                .fillMaxWidth()
         ) {
             TextField(
                 value = inputText,
