@@ -13,14 +13,8 @@ import de.syntax_institut.syntaxchat.CHAT_ROOM_NAME
 
 @Composable
 fun TopAppBarView() {
-    Text(
-        text = "🚀 $CHAT_ROOM_NAME",
-        fontSize = 24.sp,
-        fontWeight = FontWeight.Bold,
-        color = Color.White,
-        modifier = Modifier
-            .padding(16.dp)
-    )
+    // TODO
+
 }
 
 @Preview(showSystemUi = true)

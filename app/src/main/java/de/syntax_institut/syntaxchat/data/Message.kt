@@ -4,11 +4,6 @@ import com.google.firebase.Timestamp
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-/*
-
-ACHTUNG: HIER NICHTS VERÄNDERN!!!
-
-*/
 data class Message(
     var text: String = "",
     var userName: String = "",

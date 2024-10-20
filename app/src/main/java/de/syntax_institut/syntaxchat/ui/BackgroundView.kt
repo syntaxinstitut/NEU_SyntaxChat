@@ -11,12 +11,8 @@ import de.syntax_institut.syntaxchat.R
 
 @Composable
 fun BackgroundView() {
-    Image(
-        painter = painterResource(R.drawable.wallpaper_1),
-        contentDescription = "",
-        contentScale = ContentScale.Crop,
-        modifier = Modifier.fillMaxSize()
-    )
+    // TODO
+    
 }
 
 @Preview(showSystemUi = true)

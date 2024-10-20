@@ -20,38 +20,8 @@ import de.syntax_institut.syntaxchat.ui.theme.chatBlue
 
 @Composable
 fun MessageView(userName: String, text: String, time: String) {
+    // TODO
 
-    Row {
-        if (userName == USER_NAME){
-            Spacer(modifier = Modifier.weight(1f))
-        }
-        Surface(
-            shape = RoundedCornerShape(16.dp),
-            shadowElevation = 4.dp
-        ) {
-            Column(
-                modifier = Modifier
-                    .padding(8.dp)
-            ) {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Text(
-                        text = userName,
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 14.sp,
-                        color = chatBlue
-                    )
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text(
-                        text = time,
-                        fontSize = 12.sp
-                    )
-                }
-                Text(text = text)
-            }
-        }
-    }
 }
 
 @Preview

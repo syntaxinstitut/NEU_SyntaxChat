@@ -11,12 +11,6 @@ import de.syntax_institut.syntaxchat.USER_NAME
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
-/*
-
-ACHTUNG: HIER NICHTS VERÄNDERN!!!
-
-*/
-
 private const val TAG = "Firebase ViewModel"
 private const val PLEASE_ASSIGN_CHAT_ROOM_NAME =
     "Bitte gib den Namen eures Chatraums an. " + "\n\n" +

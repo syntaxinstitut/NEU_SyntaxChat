@@ -1,6 +1,8 @@
 package de.syntax_institut.syntaxchat.ui
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -32,31 +34,12 @@ fun InputView(sendMessage: (String) -> Unit){
         shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp)
     ) {
         Row(
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier
+                .padding(16.dp)
+                .fillMaxWidth()
         ) {
-            TextField(
-                value = inputText,
-                onValueChange = { inputText = it },
-                label = null,
-                maxLines = 5,
-                placeholder = { Text("Schreibe eine Nachricht an alle") },
-                shape = RoundedCornerShape(CornerSize(24.dp)),
-                colors = TextFieldDefaults.colors(
-                    focusedIndicatorColor = Color.Transparent,
-                    unfocusedIndicatorColor = Color.Transparent,
-                ),
-                modifier = Modifier
-                    .weight(1f)
-            )
-            IconButton(
-                onClick = {
-                    sendMessage(inputText)
-                    inputText = ""
-                },
-                Modifier.align(Alignment.CenterVertically)
-            ) {
-                Icon(Icons.Filled.Send, "")
-            }
+            // TODO
+
         }
     }
 
