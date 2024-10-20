@@ -1,9 +1,9 @@
 package de.syntax_institut.syntaxchat
 
 /*
-Gib hier den Namen eures Chatraums an.
+Gib hier den Namen eures Chat-Raum an.
 Beispiel:
-const val CHAT_ROOM_NAME = "UnserChatraum"
+const val CHAT_ROOM_NAME = "UnserChatRaum"
 */
 const val CHAT_ROOM_NAME = "NeustarterChatters"
 
