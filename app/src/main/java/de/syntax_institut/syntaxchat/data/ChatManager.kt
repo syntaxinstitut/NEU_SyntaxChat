@@ -18,6 +18,7 @@ private const val PLEASE_ASSIGN_CHAT_ROOM_NAME =
             "Beispiel:" + "\n" +
             "const val CHAT_ROOM_NAME = \"Chatraum\"" + "\n" +
             "const val USER_NAME = \"Beate Beispiel\""
+private const val PLEASE_CHANGE_CHAT_ROOM_NAME = "Ändere den Chat-Raum Namen"
 
 class ChatManager : ViewModel() {
 
@@ -55,6 +56,10 @@ class ChatManager : ViewModel() {
 
     fun sendMessage(text: String) {
         if (CHAT_ROOM_NAME.isEmpty()) return
+        if (CHAT_ROOM_NAME == "NeustarterChatters") {
+            _messages.value = listOf(Message(userName = "Error", text= PLEASE_CHANGE_CHAT_ROOM_NAME))
+            return
+        }
         val message = Message(
             text = text,
             userName = USER_NAME,
